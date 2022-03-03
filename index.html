@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=1320">
+		<title>북새록</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+		<!--css-->
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!--js-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>	
+		<script src="js/jquery-1.12.3.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!--오토갤러리js-->
+		<link rel="stylesheet" type="text/css" href="js/slick.css">
+		<link rel="stylesheet" type="text/css" href="js/slick-theme_.css">
+		<link rel="stylesheet" type="text/css" href="css/style_.css">
+
+		<!--검색슬라이드js-->
+		<script language="JavaScript">
+		<!--
+			$(document).ready(function() {
+				//사용할 배너
+				var $banner = $(".banner").find("ul");
+
+				var $bannerWidth = $banner.children().outerWidth();//배너 이미지의 폭
+				var $bannerHeight = $banner.children().outerHeight(); // 높이
+				var $bannerLength = $banner.children().length;//배너 이미지의 갯수
+				var rollingId;
+
+				//정해진 초마다 함수 실행
+				rollingId = setInterval(function() { rollingStart(); }, 3000);//다음 이미지로 롤링 애니메이션 할 시간차
+
+				//마우스 오버시 롤링을 멈춘다.
+				banner.mouseover(function(){
+					//중지
+					clearInterval(rollingId);
+					$(this).css("cursor", "pointer");
+				});
+				//마우스 아웃되면 다시 시작
+				banner.mouseout(function(){
+					rollingId = setInterval(function() { rollingStart(); }, 3000);
+					$(this).css("cursor", "default");
+				});
+		
+				function rollingStart() {
+					$banner.css("width", $bannerWidth + "px");
+					$banner.css("height", $bannerHeight * $bannerLength + "px");
+					//alert(bannerHeight);
+					//배너의 좌측 위치를 옮겨 준다.
+					$banner.animate({top: - $bannerHeight + "px"}, 1500, function() { //숫자는 롤링 진행되는 시간이다.
+						//첫번째 이미지를 마지막 끝에 복사(이동이 아니라 복사)해서 추가한다.
+						$(this).append("<li>" + $(this).find("li:first").html() + "</li>");
+						//뒤로 복사된 첫번재 이미지는 필요 없으니 삭제한다.
+						$(this).find("li:first").remove();
+						//다음 움직임을 위해서 배너 좌측의 위치값을 초기화 한다.
+						$(this).css("top", 0);
+						//이 과정을 반복하면서 계속 롤링하는 배너를 만들 수 있다.
+					});
+				}
+			}); 
+		//-->  
+		</script>
+
+	</head>
+	<body>
+		<div class="header">
+				<h1><img src="images/header/logo_bg.png" alt=""></h1>
+				<h2><a href="https://mk040505.github.io/booksarok/"><img src="images/header/logo.png" alt=""></a></h2>
+		</div>
+		<div id="gnb_wrap">
+			<ul id="gnb">
+				<li><a href="https://mk040505.github.io/booksarok_sub1/">회사소개</a></li>
+				<li><a href="https://mk040505.github.io/booksarok_sub2/">중고도서검색</a></li>
+				<li><a href="https://mk040505.github.io/booksarok_sub3/">도서등록</a></li>
+				<li><a href="https://mk040505.github.io/booksarok_sub4/">이벤트</a></li>
+				<li><a href="https://mk040505.github.io/booksarok_sub5/">마이페이지</a></li>
+				<li><a href="https://mk040505.github.io/booksarok_sub6/">고객센터</a></li>
+			</ul>
+		</div>
+
+
+
+		<div id="banner_wrap">
+			<video muted="" preload="true" loop autoplay>
+				<source src="movie.mp4" type="video/mp4">
+			</video>
+		</div>
+			
+
+				
+		<div id="section1">
+			<h3>중고도서 BEST</h3>
+			<section class="section1_box regular slider">
+			<div class="gallery_wrap">
+				<div class="gallery">
+					<a href="javascript:return false;">
+						<img src="images/section1/book_1.jpg" alt="">
+						<p class="book_name">내게 무해한사람</p>
+						<p class="book_content"><쇼코의 미소> 최은영 소설집
+							<br><span>최소영/문학동네</span></p>
+					</a>
+				</div>
+			</div>
+			<div class="gallery_wrap">
+				<div class="gallery">
+					<a href="javascript:return false;">
+						<img src="images/section1/book_2.jpg" alt="">
+						<p class="book_name">밝은밤</p>
+						<p class="book_content">「밝은 밤」은 시간을 관통한다
+							<br><span>최소영/문학동네</span></p>
+					</a>
+				</div>
+			</div>
+			<div class="gallery_wrap">
+				<div class="gallery">
+						<a href="javascript:return false;">
+							<img src="images/section1/book_3.jpg" alt="">
+							<p class="book_name">쇼코의 미소</p>
+							<p class="book_content">제 5회 젊은작가상 수상작
+								<br><span>최소영/문학동네</span></p>
+						</a>
+				</div>
+			</div>
+			<div class="gallery_wrap">
+				<div class="gallery">
+					<a href="javascript:return false;"><img src="images/section1/book_4.jpg" alt="">
+						<p class="book_name">다정한 것이 살아남는다</p>
+						<p class="book_content">세상을 바꾸는 인류의 진화
+							<br><span>브라이언 헤어/디플롯</span></p>
+					</a>
+				</div>
+			</div>
+			<div class="gallery_wrap">
+				<div class="gallery">
+					<a href="javascript:return false;"><img src="images/section1/book_5.jpg" alt="">
+						<p class="book_name">천개의 파랑</p>
+						<p class="book_content">부서진 너와 작은 내가 만날 때
+							<br><span>천선란/허블</span></p>
+					</a>
+				</div>
+			</div>
+		</section>
+		</div> 
+
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+		<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).on('ready', function() {
+		$(".regular").slick({infinite: true , /* 맨끝이미지에서 끝나지 않고 다시 맨앞으로 이동 */         
+		slidesToShow: 4, /* 화면에 보여질 이미지 갯수*/        
+		slidesToScroll: 1,  /* 스크롤시 이동할 이미지 갯수 */         
+		autoplay: true, /* 자동으로 다음이미지 보여주기 */         
+		arrows: true, /* 화살표 */         
+		dots:true, /* 아래점 */         
+		autoplaySpeed:1000,/* 다음이미지로 넘어갈 시간 */         
+		speed:1000 , /* 다음이미지로 넘겨질때 걸리는 시간 */         
+		pauseOnHover:true, /* 마우스 호버시 슬라이드 이동 멈춤 */        
+		//vertical:true,/* 세로방향으로 슬라이드를 원하면 추가하기// 기본값 가로방향 슬라이드*/        
+					 });
+	
+			});
+	</script>
+
+
+
+
+
+		<div id="section2"><!--추천 PCIK 책소개-->
+			<h4>추천 PICK 책소개</h4>
+			<div class="demian">
+				<div class="demian_photo">
+					<p><img src="images/section2/p_book_1.jpg" alt=""></p>
+					<p class="photo_blue">데미안</p>
+					<p class="photo_gray">헤르만 헤세/더스토리출판</p>
+				</div>
+				<div class="demian_text">
+					<p><img src="images/section2/demian.png" alt=""></p>
+					<p class="text_middle">“ 새는 알에서 나오려고 투쟁한다. 알은 세계다.
+						<br>태어나려는 자는 하나의 세계를 깨뜨려야 한다.”
+						<br>chapter 5 中</p>
+					<p class="text_bottom">1919년에 간행된 헤르만 헤세의 소설. 
+						<br>소년 싱클레어가 자각을 통해 성장해가는 과정을 그렸다. 
+						<br>싱클레어는 데미안을 통해 어두운 무의식의 세계를 알게 되고, 
+						<br>자신의 내면을 인식하기 시작한다.</p>
+				</div>
+					<p data-aos="fade-up"
+					data-aos-duration="3000" class="person_1">
+					<img src="images/section2/person_1.png" alt=""></p>
+						</div>
+			<div class="room">
+				<div class="room_photo">
+					<p><img src="images/section2/p_book_2.jpg" alt=""></p>
+					<p class="photo_blue">자기만의 방</p>
+					<p class="photo_gray">버지니아 울프/펭귄클래식</p>
+				</div>
+				<div class="room_text">
+					<p><img src="images/section2/room.png" alt=""></p>
+					<p class="text_middle">“ 나는 누구도 미워할 필요가 없습니다. 
+						<br>아무도 나에게 해를 끼칠 수 없으니까요.”
+						<br>p.110 中</p>
+					<p class="text_bottom_room">‘여성과 픽션’을 주제로 글을 쓰기 시작한 울프는 
+						<br>「자기만의 방」에서 제인 오스틴, 조지 엘리엇, 에밀리 브론테 등
+						<br> 여성 작가들의 작품들을 고찰하고, 그들이 제한된 경험과 인습적
+						<br> 통제로 뒤틀린 작품을 쓸 수밖에 없었던 현실을 발견한다.
+						</p>
+				</div>
+				<p data-aos="fade-up"
+				data-aos-duration="3000" class="person_2">
+				<img src="images/section2/person_2.png" alt=""></p>
+			</div>
+		</div>
+
+
+
+		<div id="section3"><!--중고도서 품질등급 안내-->
+			<h5>중고도서 품질등급 안내</h5>
+			<div class="section3_box">
+				<ul class="section3_grade">
+					<li>
+						<div class="bg_grade">
+							<a href="javascript:return false;">
+								<p><img src="images/section3/grade_1.png" alt=""></p>
+	 						</a>
+						</div>						
+						<p class="grade_name">최상</p>
+						<p class="grade_content">새것에 가까운 책
+							<br>변색없음,낙서없음
+							<br>얼룩없음,접힌 흔적 없음
+							<br>제본 탈착 없음</pbook_name>
+					</li>
+					<li>
+						<div class="bg_grade">
+							<a href="javascript:return false;">
+								<p><img src="images/section3/grade_2.png" alt=""></p>
+	 						</a>
+						</div>	
+						<p class="grade_name">상</p>
+						<p class="grade_content">사용감은 있으나 깨끗한 책
+							<br>희미한 벽색, 작은 얼룩 있음
+							<br>약간의 모서리 해짐
+							<br>제본 탈착 없음</p>
+					</li>
+					<li>
+						<div class="bg_grade">
+							<a href="javascript:return false;">
+								<p><img src="images/section3/grade_3.png" alt=""></p>
+	 						</a>
+						</div>	
+						<p class="grade_name">중</p>
+						<p class="grade_content">사용감이 많고 헌 느낌의 책
+							<br>전체적인 변색, 오염있음
+							<br>접힌 흔적 있음, 낙서 있음
+							<br>제본 탈착 없음</p>
+					</li>
+					<li>
+						<div class="bg_grade">
+							<a href="javascript:return false;">
+								<p><img src="images/section3/grade_4.png" alt=""></p>
+	 						</a>
+						</div>	
+						<p class="grade_name"><span>매입불가</span></p>
+						<p class="grade_content">독서에 지장이 있는 책
+							<br>증정 도서/비매품
+							<br>심한 찢어짐,물에 젖은 흔적
+							<br>제본 탈착 및 분책된 경우</p>								
+					</li>
+				</ul>
+			</div>
+
+
+
+		</div>
+
+		<div id="section4"><!--검색-->
+			<h6>도서통합검색</h6>
+			<div class="section4_box">
+				<div class="search_box1">	
+					<form>
+						<input type="text">
+					</form>
+					<a href="javascript:return false;"><img src="images/section4/search.jpg" alt=""></a>
+				</div>
+				<div class="search_box2">
+					<div class="search_slide banner">
+						<ul>
+							<li><a href="javascript:return false;">중고 BEST ▼</a></li>
+							<li><a href="javascript:return false;">추천 PCIK 책소개 ▼</a></li>
+							<li><a href="javascript:return false;">베스트셀러 모음전 ▼</a></li>
+							<li><a href="javascript:return false;">히가시노 게이고 ▼</a></li>
+							<li><a href="javascript:return false;">최저가 도서 ▼</a></li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+
+
+
+		<div id="section5"><!--이벤트-->
+			<h6>E V E N T</h6>
+			<div class="section5_box">
+				<ul class="section5_event">
+					<li>
+						<a href="https://mk040505.github.io/booksarok_sub4/#section1">
+							<p class="event_name event_name_l">리뷰 이벤트</p>
+							<p><img src="images/section5/event_1.jpg" alt=""></p>
+							<p class="event_day">기간: 2022년 1월 1일 ~ 12월31일</p>
+							<p class="event_content">중고도서를 구매하시고 도서 리뷰를 
+							<br>올려주시면 추첨을 통해 북새록 
+							<br><span>마일리지 5,000점</span>을 적립해드립니다.</p>
+						</a>
+					</li>
+					<li>
+						<a href="https://mk040505.github.io/booksarok_sub4/#section1">
+							<p class="event_name" >중고도서 첫구매 이벤트</p>
+							<p><img src="images/section5/event_2.jpg" alt=""></p>
+							<p class="event_day">기간: 2022년 1월 ~ 선착순 한정수량</pevent_day>
+							<p class="event_content">중고도서를 첫구매하시면 
+								<br>다양한 <span>북새록 굿즈</span>를 드립니다.</p>
+						</a>
+					</li>
+					<li>
+						<a href="https://mk040505.github.io/booksarok_sub4/#section1">
+							<p class="event_name event_name_l">매장방문 이벤트</p>
+							<p><img src="images/section5/event_3.jpg" alt=""></p>
+							<p class="event_day">기간: 2022년 1월 1일 ~ 5월 31일</p>
+							<p class="event_content">이벤트 기한 내에
+								<br>북새록 오프라인 매장 방문시 
+							<br><span>굿즈 스티커</span>를 드립니다.</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="section6"><!--바로가기-->
+			<div class="section6_box">
+				<p class="section6_text">중고서점 북새록이 더 궁금하다면 ? 자세히 보러가기</p>
+				<p class="section6_arrow"><img src="images/section6/letgo_arrow.png" alt="보러가기"></p>
+				<p class="section6_logo"><a href="https://mk040505.github.io/booksarok_sub1/"><img src="images/section6/letgo_logo.png" alt="보러가기"></a></p>
+			</div>
+		</div>
+
+
+<!--footer-->
+
+	<ul class="footer_top">
+		<li><a href="javascript:return false;">모바일북새록</a></li>
+		<li><a href="javascript:return false;">바로 찾는 바로드림</a></li>
+		<li><a href="javascript:return false;">중고장터 스마트비교</a></li>
+		<li><a href="javascript:return false;">북새록 마일리지카드</a></li>
+		<li><a href="javascript:return false;">매장안내</a></li>
+	</ul>
+
+	<div id="footer_middle_wrap">
+		<div class="footer_middle">
+			<ul class="footer_middle_1">
+				<li class="none"><a href="javascript:return false;">회사소개</a></li>
+				<li><a href="javascript:return false;">이용약관</a></li>
+				<li><a href="javascript:return false;">개인정보처리방침</a></li>
+				<li><a href="javascript:return false;">청소년보호정책</a></li>
+				<li><a href="javascript:return false;">협력사여러분</a></li>
+				<li><a href="javascript:return false;">제휴ㆍ제한</a></li>
+				<li><a href="javascript:return false;">광고문의</a></li>
+				<li><a href="javascript:return false;">채용정보</a></li>
+			</ul>
+			<div class="footer_middle_2">
+				<p><a href="javascript:return false;">FAMILY SITE ▲</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer_bottom_wrap">
+		<div class="footer_bottom">
+			<div class="footer_bottom_logo">
+				<img src="images/footer/footer_logo.png" alt="">
+			</div>
+			<div class="footer_bottom_text1">
+				<p>(주) 북새록   부산 중구 중앙동6가   대표이사:김민경
+						<br>사업자등록번호 : 012-345-67890
+						<br><span>대표전화 : 1544-0000 (발신자 부담전화</span>)  팩스 : 1544-000-0000 (지역번호공통)
+						<br>부산광역시 통신판매업신고번호 : 제 000호  ▶<a href="javascript:return false;">사업자정보확인</a>
+				</p>
+				<p>Copyright ⓒ <span>BOOKSALOK</span> Corp. All Rights Reserved.</p>
+			</div>
+			<div class="footer_bottom_text2">
+				<p>LG U+ 구매안전서비스   ▶<a href="javascript:return false;">서비스 가입 확인</a>
+						<br>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 LG유플러스의 구매
+						<br>안전서비스를 이용하실 수 있습니다.
+				</p>
+
+				<ul class="footer_bottom_isms">
+					<li><img src="images/footer/footer_isms.png" alt=""></li>
+					<li>정보보호관리체계
+						<br>ISMS 인증회득</li>
+					<li>[인증범위] 북새록 서비스 운영
+						<br>[유효기간] 2022.01.01. ~ 2025.12.31</li>
+				</ul>
+			
+			</div>
+		</div>
+	</div>
+
+
+	<!--top-->
+	<div class="top fixed">
+		<a href="#"><img src="images/top.png" alt="top"></a>
+	</div>
+
+
+	</body>
+</html>
+
+
+
+
+
